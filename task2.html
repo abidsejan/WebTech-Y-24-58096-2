@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Head and Title -->
+    <meta charset="UTF-8">
+    <title>Library Member Profile & Registration</title>
+
+    <!-- Favicon -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg'><text y='25' font-size='25'>📚</text></svg>">
+</head>
+
+<body>
+
+    <!-- Heading -->
+    <h1>Library Member Profile</h1>
+
+    <!-- Paragraph -->
+    <p>
+        Welcome to our <b>Library Membership System</b>.
+        This webpage allows users to view library members and register
+        for library membership.
+    </p>
+
+    <!-- Bold and Italic -->
+    <p>
+        <b>Important:</b> Please provide correct information.
+        <i>All required fields must be completed.</i>
+    </p>
+
+    <!-- Block Element -->
+    <div>
+        This is a block-level element using the DIV tag.
+    </div>
+
+    <!-- Inline Element -->
+    <p>
+        This is an <span>inline element</span> using the SPAN tag.
+    </p>
+
+    <!-- Anchor -->
+    <p>
+        Visit our
+        <a href="https://www.aiub.edu/" target="_blank">
+            University Website
+        </a>
+        for more information.
+    </p>
+
+    <!-- Image -->
+    <h2>Library</h2>
+
+    <img
+        src="https://www.magnific.com/free-ai-image/abundant-collection-antique-books-wooden-shelves-generated-by-ai_42138866.htm#fromView=keyword&page=1&position=0&uuid=6d6f551f-9f4a-480b-9b67-4f2f8c88d4c0&track=ais_hybrid&query=Library"
+        alt="Library Image"
+        width="500"
+    >
+
+    <!-- Table -->
+    <h2>Library Members</h2>
+
+    <table border="1">
+
+        <!-- Table Header -->
+        <tr>
+            <th>Member ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Image</th>
+        </tr>
+
+        <!-- Member 1 -->
+        <tr>
+            <td>LIB001</td>
+            <td>Mohammad Abid Hasan</td>
+            <td>abidhasansejan@gmail.com</td>
+            <td>
+                <img
+                    src="https://drive.google.com/file/d/1WTJDBZzqKcI7ZrY_gTaf8_e8Y6EV-Nkn/view?usp=share_link"
+                    alt="Member Image"
+                    width="70"
+                >
+            </td>
+        </tr>
+
+        <!-- Member 2 -->
+        <tr>
+            <td>LIB002</td>
+            <td>Zayema Nuha</td>
+            <td>nuharashid023@gmail.com</td>
+            <td>
+                <img
+                    src=""
+                    alt="Member Image"
+                    width="70"
+                >
+            </td>
+        </tr>
+
+        <!-- Member 3 -->
+        <tr>
+            <td>LIB003</td>
+            <td>Nishad</td>
+            <td>nega@gmail.com</td>
+            <td>
+                <img
+                    src=""
+                    alt="Member Image"
+                    width="70"
+                >
+            </td>
+        </tr>
+
+    </table>
+
+    <!-- Membership Registration Form -->
+    <h2>Membership Registration Form</h2>
+
+    <!-- GET Method -->
+    <form action="" method="GET">
+
+        <!-- Name -->
+        <label for="name">Name:</label>
+        <input
+            type="text"
+            id="name"
+            name="name"
+            required
+        >
+
+        <br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            required
+        >
+
+        <br><br>
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input
+            type="password"
+            id="password"
+            name="password"
+            required
+        >
+
+        <br><br>
+
+        <!-- Age -->
+        <label for="age">Age:</label>
+        <input
+            type="number"
+            id="age"
+            name="age"
+            required
+        >
+
+        <br><br>
+
+        <!-- Date of Birth -->
+        <label for="dob">DOB:</label>
+        <input
+            type="date"
+            id="dob"
+            name="dob"
+            required
+        >
+
+        <br><br>
+
+        <!-- Gender -->
+        <label>Gender:</label>
+
+        <input
+            type="radio"
+            id="male"
+            name="gender"
+            value="Male"
+            required
+        >
+        <label for="male">Male</label>
+
+        <input
+            type="radio"
+            id="female"
+            name="gender"
+            value="Female"
+        >
+        <label for="female">Female</label>
+
+        <input
+            type="radio"
+            id="other"
+            name="gender"
+            value="Other"
+        >
+        <label for="other">Other</label>
+
+        <br><br>
+
+        <!-- Membership Type Dropdown -->
+        <label for="membership">
+            Membership Type:
+        </label>
+
+        <select
+            id="membership"
+            name="membership"
+            required
+        >
+            <option value="">Select Membership Type</option>
+            <option value="Student">Student</option>
+            <option value="Regular">Regular</option>
+            <option value="Premium">Premium</option>
+        </select>
+
+        <br><br>
+
+        <!-- Profile Picture Upload -->
+        <label for="profile">
+            Upload Profile Picture:
+        </label>
+
+        <input
+            type="file"
+            id="profile"
+            name="profile"
+            accept="image/*"
+            required
+        >
+
+        <br><br>
+
+        <!-- Address Textarea -->
+        <label for="address">
+            Address:
+        </label>
+
+        <br>
+
+        <textarea
+            id="address"
+            name="address"
+            rows="5"
+            cols="40"
+            required
+        ></textarea>
+
+        <br><br>
+
+        <!-- Terms Checkbox -->
+        <input
+            type="checkbox"
+            id="terms"
+            name="terms"
+            value="accepted"
+            required
+        >
+
+        <label for="terms">
+            I agree to the Terms and Conditions.
+        </label>
+
+        <br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+
+</html>
